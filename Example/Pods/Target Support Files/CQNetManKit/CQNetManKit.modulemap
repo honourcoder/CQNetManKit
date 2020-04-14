@@ -1,0 +1,6 @@
+framework module CQNetManKit {
+  umbrella header "CQNetManKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

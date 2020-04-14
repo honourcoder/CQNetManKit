@@ -1,0 +1,16 @@
+PODS:
+  - CQNetManKit (0.1.0)
+
+DEPENDENCIES:
+  - CQNetManKit (from `../`)
+
+EXTERNAL SOURCES:
+  CQNetManKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CQNetManKit: 6bbe0a9f853e05731499cb8ad00546bf70943156
+
+PODFILE CHECKSUM: 7fe1b3d6c8eae29ddcbbbba86835d74510c0f8bb
+
+COCOAPODS: 1.9.0.beta.3

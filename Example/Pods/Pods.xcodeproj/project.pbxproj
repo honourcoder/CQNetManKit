@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04A40C641A4FBF7C9729E0FAFAA233BC /* Pods-CQNetManKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE123CD8CA3961FE2A0EB24AFBF66E5 /* Pods-CQNetManKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0557DCD7F8BD1F873265922A2A6758D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		091940FACB6428CC0A18BFFF8136E931 /* Pods-CQNetManKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A45B0C38EA69C4DBBAC98B35203719CE /* Pods-CQNetManKit_Example-dummy.m */; };
+		096F8ECBEC6E1FFE2F2B01BA62C1D1B0 /* CQNetManKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A508EC362D4C6F8C64837316A64BA10A /* CQNetManKit-dummy.m */; };
+		3F9D59F2967E732544C0CFC2073ABDF7 /* Pods-CQNetManKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD633F1804DE2A1EC9AA2D56E4CA26D /* Pods-CQNetManKit_Tests-dummy.m */; };
+		77DDFA05AD62CC62C5A44BFBF283A49A /* Pods-CQNetManKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8237776F32961796F379D44AA58439FE /* Pods-CQNetManKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B48FDD0DAA19625E2D0BF1F639AA8426 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE65A8428F82BA79F00B919CBCB3F5D /* ReplaceMe.m */; };
+		C744A5FC093E6F34960ABD2F7646144B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F3EE9EBD31C2E39D354F67FA2A229598 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		FFCACD0B365A4AE0380A8CD3CEBDCDCE /* CQNetManKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B2F8170C1A9C878CAF258EB94FEC7FC /* CQNetManKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4394D5BBBFE6630F56F0523206501DD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1CAFE4FFC98D9F572FE57CEDCE9F49A;
+			remoteInfo = CQNetManKit;
+		};
+		7059C2D0FA792E2347B9B8B7819097AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2FE4FF0D04DA3BDA021CD0BD32CFABC;
+			remoteInfo = "Pods-CQNetManKit_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00488AE7933E2920D981F1F760D99F60 /* CQNetManKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CQNetManKit.debug.xcconfig; sourceTree = "<group>"; };
+		0CD633F1804DE2A1EC9AA2D56E4CA26D /* Pods-CQNetManKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CQNetManKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		109CBCA604EC292926DBC5FDA53D4360 /* Pods-CQNetManKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CQNetManKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		142B4E711CD54CB7DB3420539AC30D3C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		14E2253EB686B9F659D9D9FA3D66EE40 /* CQNetManKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CQNetManKit-prefix.pch"; sourceTree = "<group>"; };
+		27490491A4395E900F3C303D02CD81BE /* Pods-CQNetManKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CQNetManKit_Tests.modulemap"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		52E09D102D3B3CA8E05ABC1281AA1228 /* Pods-CQNetManKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CQNetManKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		5E51361CE97BC5835354C4A06545D95B /* Pods_CQNetManKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CQNetManKit_Example.framework; path = "Pods-CQNetManKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE123CD8CA3961FE2A0EB24AFBF66E5 /* Pods-CQNetManKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CQNetManKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		6EF26E29F01BFD820AD21169D4E1A581 /* Pods_CQNetManKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CQNetManKit_Tests.framework; path = "Pods-CQNetManKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8237776F32961796F379D44AA58439FE /* Pods-CQNetManKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CQNetManKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		84BFC73DE2906B94C066E426F37922F6 /* Pods-CQNetManKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CQNetManKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		86518C9412254E03488DC3B29DA5806A /* CQNetManKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CQNetManKit.release.xcconfig; sourceTree = "<group>"; };
+		8936B9EF9EEAF40581817FCC78E72CFB /* Pods-CQNetManKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQNetManKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8B2F8170C1A9C878CAF258EB94FEC7FC /* CQNetManKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CQNetManKit-umbrella.h"; sourceTree = "<group>"; };
+		8D83AD53111AFBA423C50A0FD3491ADC /* Pods-CQNetManKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CQNetManKit_Example-Info.plist"; sourceTree = "<group>"; };
+		9769A7B605AE21A7355D0D78CF380378 /* Pods-CQNetManKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQNetManKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A321656E99741D4008E04C0B2E8A396 /* CQNetManKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CQNetManKit.framework; path = CQNetManKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C2BC13D70271148795AA8F3A067D13D /* Pods-CQNetManKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQNetManKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A45B0C38EA69C4DBBAC98B35203719CE /* Pods-CQNetManKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CQNetManKit_Example-dummy.m"; sourceTree = "<group>"; };
+		A508EC362D4C6F8C64837316A64BA10A /* CQNetManKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CQNetManKit-dummy.m"; sourceTree = "<group>"; };
+		ACC11A4E69047730F371301BF13811E9 /* Pods-CQNetManKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CQNetManKit_Example.modulemap"; sourceTree = "<group>"; };
+		C2F4820FEE559BC0F4299FB8878B5022 /* Pods-CQNetManKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQNetManKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C76445CE8E0BF4F77E7C0B240EC91ED3 /* Pods-CQNetManKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CQNetManKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CEB866F4DF6CEFE68EE87512793BBEE6 /* CQNetManKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CQNetManKit.modulemap; sourceTree = "<group>"; };
+		CEE65A8428F82BA79F00B919CBCB3F5D /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = CQNetManKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		DDFCF3C0450221CDB218245E13E42C0D /* CQNetManKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CQNetManKit-Info.plist"; sourceTree = "<group>"; };
+		DF3792FA8AF0580845118AF81FDCACC4 /* CQNetManKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CQNetManKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E963FE9F576DC6ADF5390676753558DC /* Pods-CQNetManKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CQNetManKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ED8F968FD09A5928B7A18DD3C2A78845 /* Pods-CQNetManKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CQNetManKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EE9C383120914F30E8148008B7C6CEF6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		840043A4A890F7DD3A989A639D5667ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3EE9EBD31C2E39D354F67FA2A229598 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A094B569676751FC49357CE695A6C236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0557DCD7F8BD1F873265922A2A6758D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D53E95BD7486F5AE21EC8331E6EF80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C744A5FC093E6F34960ABD2F7646144B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15E918D17CB44F6C671BC9376000FE13 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1C2DED8ED9193761B32975037320AB2 /* Pods-CQNetManKit_Example */,
+				25C74EBA23DC21FD260CD85F1302026D /* Pods-CQNetManKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		25C74EBA23DC21FD260CD85F1302026D /* Pods-CQNetManKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				27490491A4395E900F3C303D02CD81BE /* Pods-CQNetManKit_Tests.modulemap */,
+				E963FE9F576DC6ADF5390676753558DC /* Pods-CQNetManKit_Tests-acknowledgements.markdown */,
+				ED8F968FD09A5928B7A18DD3C2A78845 /* Pods-CQNetManKit_Tests-acknowledgements.plist */,
+				0CD633F1804DE2A1EC9AA2D56E4CA26D /* Pods-CQNetManKit_Tests-dummy.m */,
+				52E09D102D3B3CA8E05ABC1281AA1228 /* Pods-CQNetManKit_Tests-Info.plist */,
+				8237776F32961796F379D44AA58439FE /* Pods-CQNetManKit_Tests-umbrella.h */,
+				9769A7B605AE21A7355D0D78CF380378 /* Pods-CQNetManKit_Tests.debug.xcconfig */,
+				8936B9EF9EEAF40581817FCC78E72CFB /* Pods-CQNetManKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-CQNetManKit_Tests";
+			path = "Target Support Files/Pods-CQNetManKit_Tests";
+			sourceTree = "<group>";
+		};
+		382FB5CE3196AF673A0DD0217B26A775 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A321656E99741D4008E04C0B2E8A396 /* CQNetManKit.framework */,
+				5E51361CE97BC5835354C4A06545D95B /* Pods_CQNetManKit_Example.framework */,
+				6EF26E29F01BFD820AD21169D4E1A581 /* Pods_CQNetManKit_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AC5A1D778F13710EA54B1594E300426 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DF3792FA8AF0580845118AF81FDCACC4 /* CQNetManKit.podspec */,
+				EE9C383120914F30E8148008B7C6CEF6 /* LICENSE */,
+				142B4E711CD54CB7DB3420539AC30D3C /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9727547AA053E57B0527DC7B41939E5B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBCD84927F6BC27B07FF66C344D215B3 /* CQNetManKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B1C2DED8ED9193761B32975037320AB2 /* Pods-CQNetManKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				ACC11A4E69047730F371301BF13811E9 /* Pods-CQNetManKit_Example.modulemap */,
+				C76445CE8E0BF4F77E7C0B240EC91ED3 /* Pods-CQNetManKit_Example-acknowledgements.markdown */,
+				109CBCA604EC292926DBC5FDA53D4360 /* Pods-CQNetManKit_Example-acknowledgements.plist */,
+				A45B0C38EA69C4DBBAC98B35203719CE /* Pods-CQNetManKit_Example-dummy.m */,
+				84BFC73DE2906B94C066E426F37922F6 /* Pods-CQNetManKit_Example-frameworks.sh */,
+				8D83AD53111AFBA423C50A0FD3491ADC /* Pods-CQNetManKit_Example-Info.plist */,
+				5FE123CD8CA3961FE2A0EB24AFBF66E5 /* Pods-CQNetManKit_Example-umbrella.h */,
+				9C2BC13D70271148795AA8F3A067D13D /* Pods-CQNetManKit_Example.debug.xcconfig */,
+				C2F4820FEE559BC0F4299FB8878B5022 /* Pods-CQNetManKit_Example.release.xcconfig */,
+			);
+			name = "Pods-CQNetManKit_Example";
+			path = "Target Support Files/Pods-CQNetManKit_Example";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CBCD84927F6BC27B07FF66C344D215B3 /* CQNetManKit */ = {
+			isa = PBXGroup;
+			children = (
+				CEE65A8428F82BA79F00B919CBCB3F5D /* ReplaceMe.m */,
+				5AC5A1D778F13710EA54B1594E300426 /* Pod */,
+				D98D9044F8F6AD17ACF9ACA90CEEB67C /* Support Files */,
+			);
+			name = CQNetManKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				9727547AA053E57B0527DC7B41939E5B /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				382FB5CE3196AF673A0DD0217B26A775 /* Products */,
+				15E918D17CB44F6C671BC9376000FE13 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D98D9044F8F6AD17ACF9ACA90CEEB67C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEB866F4DF6CEFE68EE87512793BBEE6 /* CQNetManKit.modulemap */,
+				A508EC362D4C6F8C64837316A64BA10A /* CQNetManKit-dummy.m */,
+				DDFCF3C0450221CDB218245E13E42C0D /* CQNetManKit-Info.plist */,
+				14E2253EB686B9F659D9D9FA3D66EE40 /* CQNetManKit-prefix.pch */,
+				8B2F8170C1A9C878CAF258EB94FEC7FC /* CQNetManKit-umbrella.h */,
+				00488AE7933E2920D981F1F760D99F60 /* CQNetManKit.debug.xcconfig */,
+				86518C9412254E03488DC3B29DA5806A /* CQNetManKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CQNetManKit";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4CC8DB39BF9A47AB90644FE977F19951 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCACD0B365A4AE0380A8CD3CEBDCDCE /* CQNetManKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE2F857F3E5E9B950ABF1091D823A4A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A40C641A4FBF7C9729E0FAFAA233BC /* Pods-CQNetManKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095B573C8DC9D7186FB351540B15765 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77DDFA05AD62CC62C5A44BFBF283A49A /* Pods-CQNetManKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		672121298D9C8B67742AD4110073852E /* Pods-CQNetManKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67DF9E26FB2BBF03CB613F518BECC064 /* Build configuration list for PBXNativeTarget "Pods-CQNetManKit_Tests" */;
+			buildPhases = (
+				D095B573C8DC9D7186FB351540B15765 /* Headers */,
+				2908EAD46C78CD8B22229C44E19605A9 /* Sources */,
+				B1D53E95BD7486F5AE21EC8331E6EF80 /* Frameworks */,
+				9C3376C56D8B0447ED3B79DAECA1959A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC8D59966AFBD552D6DAB8A80941BF32 /* PBXTargetDependency */,
+			);
+			name = "Pods-CQNetManKit_Tests";
+			productName = "Pods-CQNetManKit_Tests";
+			productReference = 6EF26E29F01BFD820AD21169D4E1A581 /* Pods_CQNetManKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A2FE4FF0D04DA3BDA021CD0BD32CFABC /* Pods-CQNetManKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841AEC8037A5C3591AD96CA418CC9A39 /* Build configuration list for PBXNativeTarget "Pods-CQNetManKit_Example" */;
+			buildPhases = (
+				9CE2F857F3E5E9B950ABF1091D823A4A /* Headers */,
+				10078D0CBCC72782C5629ED9DB30826D /* Sources */,
+				840043A4A890F7DD3A989A639D5667ED /* Frameworks */,
+				AD240C6C8E88CFEDBEAD01928788F540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E0F1042EC0B5346826AB6E8F670213A /* PBXTargetDependency */,
+			);
+			name = "Pods-CQNetManKit_Example";
+			productName = "Pods-CQNetManKit_Example";
+			productReference = 5E51361CE97BC5835354C4A06545D95B /* Pods_CQNetManKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B1CAFE4FFC98D9F572FE57CEDCE9F49A /* CQNetManKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDC05A44F69505BEB4C594C794C82F8C /* Build configuration list for PBXNativeTarget "CQNetManKit" */;
+			buildPhases = (
+				4CC8DB39BF9A47AB90644FE977F19951 /* Headers */,
+				EF14C5AD029CD268D7031F8EBC98E4F0 /* Sources */,
+				A094B569676751FC49357CE695A6C236 /* Frameworks */,
+				4606D01C66C7BF0E40F428137BF921CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CQNetManKit;
+			productName = CQNetManKit;
+			productReference = 9A321656E99741D4008E04C0B2E8A396 /* CQNetManKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 382FB5CE3196AF673A0DD0217B26A775 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1CAFE4FFC98D9F572FE57CEDCE9F49A /* CQNetManKit */,
+				A2FE4FF0D04DA3BDA021CD0BD32CFABC /* Pods-CQNetManKit_Example */,
+				672121298D9C8B67742AD4110073852E /* Pods-CQNetManKit_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4606D01C66C7BF0E40F428137BF921CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C3376C56D8B0447ED3B79DAECA1959A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD240C6C8E88CFEDBEAD01928788F540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10078D0CBCC72782C5629ED9DB30826D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091940FACB6428CC0A18BFFF8136E931 /* Pods-CQNetManKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2908EAD46C78CD8B22229C44E19605A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F9D59F2967E732544C0CFC2073ABDF7 /* Pods-CQNetManKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF14C5AD029CD268D7031F8EBC98E4F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096F8ECBEC6E1FFE2F2B01BA62C1D1B0 /* CQNetManKit-dummy.m in Sources */,
+				B48FDD0DAA19625E2D0BF1F639AA8426 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E0F1042EC0B5346826AB6E8F670213A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CQNetManKit;
+			target = B1CAFE4FFC98D9F572FE57CEDCE9F49A /* CQNetManKit */;
+			targetProxy = 4394D5BBBFE6630F56F0523206501DD6 /* PBXContainerItemProxy */;
+		};
+		EC8D59966AFBD552D6DAB8A80941BF32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CQNetManKit_Example";
+			target = A2FE4FF0D04DA3BDA021CD0BD32CFABC /* Pods-CQNetManKit_Example */;
+			targetProxy = 7059C2D0FA792E2347B9B8B7819097AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08D44CF33EEA65D2773AB1E88BA7B6D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86518C9412254E03488DC3B29DA5806A /* CQNetManKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CQNetManKit/CQNetManKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CQNetManKit/CQNetManKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CQNetManKit/CQNetManKit.modulemap";
+				PRODUCT_MODULE_NAME = CQNetManKit;
+				PRODUCT_NAME = CQNetManKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		23950CB8540E909DE5B13C6A665EAD77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00488AE7933E2920D981F1F760D99F60 /* CQNetManKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CQNetManKit/CQNetManKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CQNetManKit/CQNetManKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CQNetManKit/CQNetManKit.modulemap";
+				PRODUCT_MODULE_NAME = CQNetManKit;
+				PRODUCT_NAME = CQNetManKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34CEEF5408C312B72646C91D54CCB863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F4820FEE559BC0F4299FB8878B5022 /* Pods-CQNetManKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CQNetManKit_Example/Pods-CQNetManKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CQNetManKit_Example/Pods-CQNetManKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		81144F7415672DE96B9F7F0AC21982C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8936B9EF9EEAF40581817FCC78E72CFB /* Pods-CQNetManKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CQNetManKit_Tests/Pods-CQNetManKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CQNetManKit_Tests/Pods-CQNetManKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A6F925C96DA8C98A8D4C3AC3A5AD6F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C2BC13D70271148795AA8F3A067D13D /* Pods-CQNetManKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CQNetManKit_Example/Pods-CQNetManKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CQNetManKit_Example/Pods-CQNetManKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D8174F1DB0BF55640D829760F3E51010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9769A7B605AE21A7355D0D78CF380378 /* Pods-CQNetManKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CQNetManKit_Tests/Pods-CQNetManKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CQNetManKit_Tests/Pods-CQNetManKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67DF9E26FB2BBF03CB613F518BECC064 /* Build configuration list for PBXNativeTarget "Pods-CQNetManKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8174F1DB0BF55640D829760F3E51010 /* Debug */,
+				81144F7415672DE96B9F7F0AC21982C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841AEC8037A5C3591AD96CA418CC9A39 /* Build configuration list for PBXNativeTarget "Pods-CQNetManKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A6F925C96DA8C98A8D4C3AC3A5AD6F4 /* Debug */,
+				34CEEF5408C312B72646C91D54CCB863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDC05A44F69505BEB4C594C794C82F8C /* Build configuration list for PBXNativeTarget "CQNetManKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23950CB8540E909DE5B13C6A665EAD77 /* Debug */,
+				08D44CF33EEA65D2773AB1E88BA7B6D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
