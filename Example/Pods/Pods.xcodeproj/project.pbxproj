@@ -13,7 +13,30 @@
 		096F8ECBEC6E1FFE2F2B01BA62C1D1B0 /* CQNetManKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A508EC362D4C6F8C64837316A64BA10A /* CQNetManKit-dummy.m */; };
 		3F9D59F2967E732544C0CFC2073ABDF7 /* Pods-CQNetManKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD633F1804DE2A1EC9AA2D56E4CA26D /* Pods-CQNetManKit_Tests-dummy.m */; };
 		77DDFA05AD62CC62C5A44BFBF283A49A /* Pods-CQNetManKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8237776F32961796F379D44AA58439FE /* Pods-CQNetManKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B48FDD0DAA19625E2D0BF1F639AA8426 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE65A8428F82BA79F00B919CBCB3F5D /* ReplaceMe.m */; };
+		8E2C601D2446F0DB0090A282 /* CQNetManKit-prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 14E2253EB686B9F659D9D9FA3D66EE40 /* CQNetManKit-prefix.pch */; };
+		8E2C60292448012A0090A282 /* CQNetManAppContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C60272448012A0090A282 /* CQNetManAppContext.h */; };
+		8E2C602A2448012A0090A282 /* CQNetManAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C60282448012A0090A282 /* CQNetManAppContext.m */; };
+		8E2C602D244801870090A282 /* CQNetManGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C602B244801870090A282 /* CQNetManGenerator.h */; };
+		8E2C602E244801870090A282 /* CQNetManGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C602C244801870090A282 /* CQNetManGenerator.m */; };
+		8E2C6036244803410090A282 /* NSString+NetMan.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C6034244803410090A282 /* NSString+NetMan.m */; };
+		8E2C6037244803410090A282 /* NSString+NetMan.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C6035244803410090A282 /* NSString+NetMan.h */; };
+		8E2C603A2448048E0090A282 /* UIDevice+NetMan.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C60382448048E0090A282 /* UIDevice+NetMan.h */; };
+		8E2C603B2448048E0090A282 /* UIDevice+NetMan.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C60392448048E0090A282 /* UIDevice+NetMan.m */; };
+		8E2C603E24480B0F0090A282 /* NSObject+NMNetWorkingAutoCancel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C603C24480B0E0090A282 /* NSObject+NMNetWorkingAutoCancel.h */; };
+		8E2C603F24480B0F0090A282 /* NSObject+NMNetWorkingAutoCancel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C603D24480B0E0090A282 /* NSObject+NMNetWorkingAutoCancel.m */; };
+		8E2C604224480B390090A282 /* CQNetManAutoCancelHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C604024480B390090A282 /* CQNetManAutoCancelHandler.m */; };
+		8E2C604324480B390090A282 /* CQNetManAutoCancelHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604124480B390090A282 /* CQNetManAutoCancelHandler.h */; };
+		8E2C604624480B650090A282 /* CQNetManBaseNetEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604424480B650090A282 /* CQNetManBaseNetEngine.h */; };
+		8E2C604724480B650090A282 /* CQNetManBaseNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C604524480B650090A282 /* CQNetManBaseNetEngine.m */; };
+		8E2C604A24480BD70090A282 /* CQNetManBaseServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604824480BD70090A282 /* CQNetManBaseServer.h */; };
+		8E2C604B24480BD70090A282 /* CQNetManBaseServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C604924480BD70090A282 /* CQNetManBaseServer.m */; };
+		8E2C604D24480BE10090A282 /* CQNetManConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604C24480BE10090A282 /* CQNetManConfig.h */; };
+		8E2C605024480C070090A282 /* CQNetManRequestGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604E24480C070090A282 /* CQNetManRequestGenerator.h */; };
+		8E2C605124480C080090A282 /* CQNetManRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C604F24480C070090A282 /* CQNetManRequestGenerator.m */; };
+		8E2C605424482F530090A282 /* CQNetManManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C605224482F530090A282 /* CQNetManManager.m */; };
+		8E2C605524482F530090A282 /* CQNetManManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C605324482F530090A282 /* CQNetManManager.h */; };
+		8E2C60582448303F0090A282 /* CQNetManBaseRequestModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C60562448303F0090A282 /* CQNetManBaseRequestModel.h */; };
+		8E2C60592448303F0090A282 /* CQNetManBaseRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C60572448303F0090A282 /* CQNetManBaseRequestModel.m */; };
 		C744A5FC093E6F34960ABD2F7646144B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		F3EE9EBD31C2E39D354F67FA2A229598 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		FFCACD0B365A4AE0380A8CD3CEBDCDCE /* CQNetManKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B2F8170C1A9C878CAF258EB94FEC7FC /* CQNetManKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,36 +63,58 @@
 		00488AE7933E2920D981F1F760D99F60 /* CQNetManKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CQNetManKit.debug.xcconfig; sourceTree = "<group>"; };
 		0CD633F1804DE2A1EC9AA2D56E4CA26D /* Pods-CQNetManKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CQNetManKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		109CBCA604EC292926DBC5FDA53D4360 /* Pods-CQNetManKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CQNetManKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		142B4E711CD54CB7DB3420539AC30D3C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		142B4E711CD54CB7DB3420539AC30D3C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		14E2253EB686B9F659D9D9FA3D66EE40 /* CQNetManKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CQNetManKit-prefix.pch"; sourceTree = "<group>"; };
 		27490491A4395E900F3C303D02CD81BE /* Pods-CQNetManKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CQNetManKit_Tests.modulemap"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		52E09D102D3B3CA8E05ABC1281AA1228 /* Pods-CQNetManKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CQNetManKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		5E51361CE97BC5835354C4A06545D95B /* Pods_CQNetManKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CQNetManKit_Example.framework; path = "Pods-CQNetManKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E51361CE97BC5835354C4A06545D95B /* Pods_CQNetManKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CQNetManKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE123CD8CA3961FE2A0EB24AFBF66E5 /* Pods-CQNetManKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CQNetManKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		6EF26E29F01BFD820AD21169D4E1A581 /* Pods_CQNetManKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CQNetManKit_Tests.framework; path = "Pods-CQNetManKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EF26E29F01BFD820AD21169D4E1A581 /* Pods_CQNetManKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CQNetManKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8237776F32961796F379D44AA58439FE /* Pods-CQNetManKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CQNetManKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		84BFC73DE2906B94C066E426F37922F6 /* Pods-CQNetManKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CQNetManKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		86518C9412254E03488DC3B29DA5806A /* CQNetManKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CQNetManKit.release.xcconfig; sourceTree = "<group>"; };
 		8936B9EF9EEAF40581817FCC78E72CFB /* Pods-CQNetManKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQNetManKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8B2F8170C1A9C878CAF258EB94FEC7FC /* CQNetManKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CQNetManKit-umbrella.h"; sourceTree = "<group>"; };
 		8D83AD53111AFBA423C50A0FD3491ADC /* Pods-CQNetManKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CQNetManKit_Example-Info.plist"; sourceTree = "<group>"; };
+		8E2C60272448012A0090A282 /* CQNetManAppContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CQNetManAppContext.h; sourceTree = "<group>"; };
+		8E2C60282448012A0090A282 /* CQNetManAppContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CQNetManAppContext.m; sourceTree = "<group>"; };
+		8E2C602B244801870090A282 /* CQNetManGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CQNetManGenerator.h; sourceTree = "<group>"; };
+		8E2C602C244801870090A282 /* CQNetManGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CQNetManGenerator.m; sourceTree = "<group>"; };
+		8E2C6034244803410090A282 /* NSString+NetMan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NetMan.m"; sourceTree = "<group>"; };
+		8E2C6035244803410090A282 /* NSString+NetMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NetMan.h"; sourceTree = "<group>"; };
+		8E2C60382448048E0090A282 /* UIDevice+NetMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+NetMan.h"; sourceTree = "<group>"; };
+		8E2C60392448048E0090A282 /* UIDevice+NetMan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+NetMan.m"; sourceTree = "<group>"; };
+		8E2C603C24480B0E0090A282 /* NSObject+NMNetWorkingAutoCancel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NMNetWorkingAutoCancel.h"; sourceTree = "<group>"; };
+		8E2C603D24480B0E0090A282 /* NSObject+NMNetWorkingAutoCancel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NMNetWorkingAutoCancel.m"; sourceTree = "<group>"; };
+		8E2C604024480B390090A282 /* CQNetManAutoCancelHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQNetManAutoCancelHandler.m; sourceTree = "<group>"; };
+		8E2C604124480B390090A282 /* CQNetManAutoCancelHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManAutoCancelHandler.h; sourceTree = "<group>"; };
+		8E2C604424480B650090A282 /* CQNetManBaseNetEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManBaseNetEngine.h; sourceTree = "<group>"; };
+		8E2C604524480B650090A282 /* CQNetManBaseNetEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQNetManBaseNetEngine.m; sourceTree = "<group>"; };
+		8E2C604824480BD70090A282 /* CQNetManBaseServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManBaseServer.h; sourceTree = "<group>"; };
+		8E2C604924480BD70090A282 /* CQNetManBaseServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQNetManBaseServer.m; sourceTree = "<group>"; };
+		8E2C604C24480BE10090A282 /* CQNetManConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManConfig.h; sourceTree = "<group>"; };
+		8E2C604E24480C070090A282 /* CQNetManRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManRequestGenerator.h; sourceTree = "<group>"; };
+		8E2C604F24480C070090A282 /* CQNetManRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQNetManRequestGenerator.m; sourceTree = "<group>"; };
+		8E2C605224482F530090A282 /* CQNetManManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQNetManManager.m; sourceTree = "<group>"; };
+		8E2C605324482F530090A282 /* CQNetManManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManManager.h; sourceTree = "<group>"; };
+		8E2C60562448303F0090A282 /* CQNetManBaseRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManBaseRequestModel.h; sourceTree = "<group>"; };
+		8E2C60572448303F0090A282 /* CQNetManBaseRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQNetManBaseRequestModel.m; sourceTree = "<group>"; };
 		9769A7B605AE21A7355D0D78CF380378 /* Pods-CQNetManKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQNetManKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9A321656E99741D4008E04C0B2E8A396 /* CQNetManKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CQNetManKit.framework; path = CQNetManKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A321656E99741D4008E04C0B2E8A396 /* CQNetManKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CQNetManKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2BC13D70271148795AA8F3A067D13D /* Pods-CQNetManKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQNetManKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A45B0C38EA69C4DBBAC98B35203719CE /* Pods-CQNetManKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CQNetManKit_Example-dummy.m"; sourceTree = "<group>"; };
 		A508EC362D4C6F8C64837316A64BA10A /* CQNetManKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CQNetManKit-dummy.m"; sourceTree = "<group>"; };
 		ACC11A4E69047730F371301BF13811E9 /* Pods-CQNetManKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CQNetManKit_Example.modulemap"; sourceTree = "<group>"; };
 		C2F4820FEE559BC0F4299FB8878B5022 /* Pods-CQNetManKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQNetManKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C76445CE8E0BF4F77E7C0B240EC91ED3 /* Pods-CQNetManKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CQNetManKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CEB866F4DF6CEFE68EE87512793BBEE6 /* CQNetManKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CQNetManKit.modulemap; sourceTree = "<group>"; };
-		CEE65A8428F82BA79F00B919CBCB3F5D /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = CQNetManKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		CEB866F4DF6CEFE68EE87512793BBEE6 /* CQNetManKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CQNetManKit.modulemap; sourceTree = "<group>"; usesTabs = 0; };
 		DDFCF3C0450221CDB218245E13E42C0D /* CQNetManKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CQNetManKit-Info.plist"; sourceTree = "<group>"; };
-		DF3792FA8AF0580845118AF81FDCACC4 /* CQNetManKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CQNetManKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DF3792FA8AF0580845118AF81FDCACC4 /* CQNetManKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CQNetManKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E963FE9F576DC6ADF5390676753558DC /* Pods-CQNetManKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CQNetManKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ED8F968FD09A5928B7A18DD3C2A78845 /* Pods-CQNetManKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CQNetManKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		EE9C383120914F30E8148008B7C6CEF6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		EE9C383120914F30E8148008B7C6CEF6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +190,71 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		8E2C60222447FCED0090A282 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				8E2C605324482F530090A282 /* CQNetManManager.h */,
+				8E2C605224482F530090A282 /* CQNetManManager.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		8E2C60232447FD1C0090A282 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		8E2C6024244800200090A282 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E2C60562448303F0090A282 /* CQNetManBaseRequestModel.h */,
+				8E2C60572448303F0090A282 /* CQNetManBaseRequestModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E2C6025244800460090A282 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				8E2C604C24480BE10090A282 /* CQNetManConfig.h */,
+				8E2C604824480BD70090A282 /* CQNetManBaseServer.h */,
+				8E2C604924480BD70090A282 /* CQNetManBaseServer.m */,
+				8E2C604424480B650090A282 /* CQNetManBaseNetEngine.h */,
+				8E2C604524480B650090A282 /* CQNetManBaseNetEngine.m */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		8E2C6026244800F80090A282 /* Supply */ = {
+			isa = PBXGroup;
+			children = (
+				8E2C604124480B390090A282 /* CQNetManAutoCancelHandler.h */,
+				8E2C604024480B390090A282 /* CQNetManAutoCancelHandler.m */,
+				8E2C603C24480B0E0090A282 /* NSObject+NMNetWorkingAutoCancel.h */,
+				8E2C603D24480B0E0090A282 /* NSObject+NMNetWorkingAutoCancel.m */,
+				8E2C60272448012A0090A282 /* CQNetManAppContext.h */,
+				8E2C60282448012A0090A282 /* CQNetManAppContext.m */,
+				8E2C602B244801870090A282 /* CQNetManGenerator.h */,
+				8E2C602C244801870090A282 /* CQNetManGenerator.m */,
+				8E2C604E24480C070090A282 /* CQNetManRequestGenerator.h */,
+				8E2C604F24480C070090A282 /* CQNetManRequestGenerator.m */,
+			);
+			path = Supply;
+			sourceTree = "<group>";
+		};
+		8E2C60332448023B0090A282 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8E2C60382448048E0090A282 /* UIDevice+NetMan.h */,
+				8E2C60392448048E0090A282 /* UIDevice+NetMan.m */,
+				8E2C6035244803410090A282 /* NSString+NetMan.h */,
+				8E2C6034244803410090A282 /* NSString+NetMan.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		9727547AA053E57B0527DC7B41939E5B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,7 +291,12 @@
 		CBCD84927F6BC27B07FF66C344D215B3 /* CQNetManKit */ = {
 			isa = PBXGroup;
 			children = (
-				CEE65A8428F82BA79F00B919CBCB3F5D /* ReplaceMe.m */,
+				8E2C60332448023B0090A282 /* Category */,
+				8E2C6026244800F80090A282 /* Supply */,
+				8E2C6025244800460090A282 /* Engine */,
+				8E2C6024244800200090A282 /* Model */,
+				8E2C60232447FD1C0090A282 /* Handler */,
+				8E2C60222447FCED0090A282 /* Public */,
 				5AC5A1D778F13710EA54B1594E300426 /* Pod */,
 				D98D9044F8F6AD17ACF9ACA90CEEB67C /* Support Files */,
 			);
@@ -230,7 +345,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E2C60292448012A0090A282 /* CQNetManAppContext.h in Headers */,
+				8E2C605024480C070090A282 /* CQNetManRequestGenerator.h in Headers */,
+				8E2C605524482F530090A282 /* CQNetManManager.h in Headers */,
+				8E2C604A24480BD70090A282 /* CQNetManBaseServer.h in Headers */,
+				8E2C604D24480BE10090A282 /* CQNetManConfig.h in Headers */,
+				8E2C602D244801870090A282 /* CQNetManGenerator.h in Headers */,
+				8E2C603E24480B0F0090A282 /* NSObject+NMNetWorkingAutoCancel.h in Headers */,
+				8E2C6037244803410090A282 /* NSString+NetMan.h in Headers */,
+				8E2C60582448303F0090A282 /* CQNetManBaseRequestModel.h in Headers */,
+				8E2C604624480B650090A282 /* CQNetManBaseNetEngine.h in Headers */,
+				8E2C603A2448048E0090A282 /* UIDevice+NetMan.h in Headers */,
 				FFCACD0B365A4AE0380A8CD3CEBDCDCE /* CQNetManKit-umbrella.h in Headers */,
+				8E2C601D2446F0DB0090A282 /* CQNetManKit-prefix.pch in Headers */,
+				8E2C604324480B390090A282 /* CQNetManAutoCancelHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,8 +511,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E2C602A2448012A0090A282 /* CQNetManAppContext.m in Sources */,
 				096F8ECBEC6E1FFE2F2B01BA62C1D1B0 /* CQNetManKit-dummy.m in Sources */,
-				B48FDD0DAA19625E2D0BF1F639AA8426 /* ReplaceMe.m in Sources */,
+				8E2C605424482F530090A282 /* CQNetManManager.m in Sources */,
+				8E2C604B24480BD70090A282 /* CQNetManBaseServer.m in Sources */,
+				8E2C6036244803410090A282 /* NSString+NetMan.m in Sources */,
+				8E2C604724480B650090A282 /* CQNetManBaseNetEngine.m in Sources */,
+				8E2C603F24480B0F0090A282 /* NSObject+NMNetWorkingAutoCancel.m in Sources */,
+				8E2C604224480B390090A282 /* CQNetManAutoCancelHandler.m in Sources */,
+				8E2C602E244801870090A282 /* CQNetManGenerator.m in Sources */,
+				8E2C605124480C080090A282 /* CQNetManRequestGenerator.m in Sources */,
+				8E2C603B2448048E0090A282 /* UIDevice+NetMan.m in Sources */,
+				8E2C60592448303F0090A282 /* CQNetManBaseRequestModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,8 +694,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
