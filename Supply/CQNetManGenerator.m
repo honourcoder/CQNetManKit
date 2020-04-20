@@ -28,8 +28,7 @@
         }
     }
     
-    result = [self md5:inputString];
-    
+    result = [self md5:inputString];    
     return result;
 }
 

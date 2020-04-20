@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface CQNetManManager : NSObject
 
+
+
 +(instancetype)defaultManager;
 
 /**

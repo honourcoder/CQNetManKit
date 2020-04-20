@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CQNetManConfig.h"
+#import "CQNetManDefine.h"
 #import "CQNetManBaseServer.h"
 
 NS_ASSUME_NONNULL_BEGIN

@@ -6,8 +6,8 @@
 //  Copyright © 2019 Arthur's. All rights reserved.
 //
 
-#ifndef CQNetManConfig_h
-#define CQNetManConfig_h
+#ifndef CQNetManDefine_h
+#define CQNetManDefine_h
 
 typedef NS_ENUM(NSUInteger, CQNetManServerType) {
     CQNetManServerTypeDevelop,                  //测试服务器
@@ -27,4 +27,4 @@ typedef NS_ENUM(NSInteger, CQNetManRequestType){
 typedef void(^ProgressBlock)(NSProgress *taskProgress);
 typedef void(^CompletionHandlerBlock)(id data, NSError *error);
 
-#endif /* CQNetManConfig_h */
+#endif /* CQNetManDefine_h */

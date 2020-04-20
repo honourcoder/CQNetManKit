@@ -11,11 +11,13 @@
 #import "NSString+NetMan.h"
 #import "CQNetManBaseRequestModel.h"
 #import "CQNetManBaseServer.h"
+#import "CQNetManHttpRequestSerializer.h"
 
 static NSTimeInterval kNetManTimeoutSeconds = 20.0f;
 
 @interface CQNetManRequestGenerator ()
 
+@property (nonatomic, strong)CQNetManHttpRequestSerializer *httpRequestSerializer;
 
 @end
 
@@ -60,20 +62,11 @@ static NSTimeInterval kNetManTimeoutSeconds = 20.0f;
     server.environmentType = (CQEnvironmentType)dataModel.serverType;
     NSMutableDictionary *commonParams = [NSMutableDictionary dictionaryWithDictionary:[CQNetManGenerator generateCommonInfoParamsDictionary]];
     [commonParams addEntriesFromDictionary:dataModel.parameters];
-    NSString *privateKey = @"";
-    if (![NSString isEmptyString:privateKey]) {
-        /**
-         *  每个公司的签名方法不同，可以根据自己的设计进行修改，这里是将privateKey放在参数里面，然后将所有的参数和参数名转成字符串进行MD5，将得到的MD5值放进commonParams，上传的时候再讲privateKey从commonParams移除
-         */
-        //        commonParams[@"private_key"] = service.privateKey;
-        //        NSString *signature = [YASignatureGenerator sign:commonParams];
-        //        commonParams[@"sign"] = signature;
-        //        [commonParams removeObjectForKey:@"private_key"];
-    }
     
     NSString *urlString = [self URLStringWithServiceUrl:server.apiBaseUrl path:dataModel.apiMethodPath];
     NSError *error;
     NSMutableURLRequest *request;
+    request.cachePolicy = NSURLRequestReturnCacheDataElseLoad;
     if (dataModel.requestType == CQNetManRequestTypeGet) {
         #pragma mark 等待替换
 //        request = [self.httpRequestSerializer requestWithMethod:@"GET" URLString:urlString parameters:commonParams error:&error];
