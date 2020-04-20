@@ -9,6 +9,7 @@
 #import "CQNetManManager.h"
 #import "CQNetManBaseRequestModel.h"
 #import "CQNetManRequestGenerator.h"
+#import "CQNetManHandler.h"
 
 @interface CQNetManManager ()
 
@@ -53,7 +54,7 @@
 - (NSNumber *)callRequestWithRequestModel:(CQNetManBaseRequestModel *)requestModel{
     NSURLRequest *request = [[CQNetManRequestGenerator defaultGenerator] generateWithRequestDataModel:requestModel];
     typeof(self) __weak weakSelf = self;
-    NSURLSessionDataTask *task;
+    [CQNetManHandler doPostWithURL:request];
 //    AFURLSessionManager *sessionManager = self.sessionManager;
 //    NSURLSessionDataTask *task = [NSURLSession
 //                                  dataTaskWithRequest:request
