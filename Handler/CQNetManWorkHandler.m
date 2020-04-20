@@ -1,13 +1,13 @@
 //
-//  CQNetManHandler.m
+//  CQNetManWorkHandler.m
 //  CQNetManKit
 //
-//  Created by Arthur's on 2020/4/16.
+//  Created by Arthur on 2020/4/20.
 //
 
-#import "CQNetManHandler.h"
+#import "CQNetManWorkHandler.h"
 
-@implementation CQNetManHandler
+@implementation CQNetManWorkHandler
 
 +(void)doGetWithURL:(NSString *)urlString andSloveBlock:(CQNetManResponseSolveBlock)handlerBlock{
     NSString *urlStr = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
@@ -41,7 +41,7 @@
     }];
 }
 
-+(void)doNetWorkWithRequst:(NSURLRequest *)request andSolveBlock:(CQNetManResponseSolveBlock)handlerBlock{
++(NSURLSessionTask *)doNetWorkWithRequst:(NSURLRequest *)request andSolveBlock:(CQNetManResponseSolveBlock)handlerBlock{
     NSURLSession *sharedSession = [NSURLSession sharedSession];
         
     NSURLSessionDataTask *dataTask = [sharedSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
@@ -50,6 +50,7 @@
     
     }];
     [dataTask resume];
+    return dataTask;
 }
 
 @end

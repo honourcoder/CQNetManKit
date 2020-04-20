@@ -1,8 +1,8 @@
 //
-//  CQNetManHandler.h
+//  CQNetManWorkHandler.h
 //  CQNetManKit
 //
-//  Created by Arthur's on 2020/4/16.
+//  Created by Arthur on 2020/4/20.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^CQNetManResponseSolveBlock)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error);
 
-@interface CQNetManHandler : NSObject
+@interface CQNetManWorkHandler : NSObject
 
 
 +(void)doGetWithURL:(NSString *)urlString andSloveBlock:(CQNetManResponseSolveBlock)handlerBlock;
@@ -20,7 +20,7 @@ typedef void(^CQNetManResponseSolveBlock)(NSData * _Nullable data, NSURLResponse
 
 +(void)doPostWithURL:(NSString *)urlString andParamsData:(NSData *)paramsData andSloveBlock:(CQNetManResponseSolveBlock)handlerBlock;
 
-+(void)doNetWorkWithRequst:(NSURLRequest *)request andSolveBlock:(CQNetManResponseSolveBlock)handlerBlock;
++(NSURLSessionTask *)doNetWorkWithRequst:(NSURLRequest *)request andSolveBlock:(CQNetManResponseSolveBlock)handlerBlock;
 
 @end
 
