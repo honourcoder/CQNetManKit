@@ -69,9 +69,9 @@ static NSTimeInterval kNetManTimeoutSeconds = 20.0f;
     request.cachePolicy = NSURLRequestReturnCacheDataElseLoad;
     if (dataModel.requestType == CQNetManRequestTypeGet) {
         #pragma mark 等待替换
-//        request = [self.httpRequestSerializer requestWithMethod:@"GET" URLString:urlString parameters:commonParams error:&error];
-//    } else if (dataModel.requestType == CQNetManRequestTypePost) {
-//        request = [self.httpRequestSerializer requestWithMethod:@"POST" URLString:urlString parameters:commonParams error:&error];
+        request = [self.httpRequestSerializer requestWithMethod:@"GET" URLString:urlString parameters:commonParams error:&error];
+    } else if (dataModel.requestType == CQNetManRequestTypePost) {
+        request = [self.httpRequestSerializer requestWithMethod:@"POST" URLString:urlString parameters:commonParams error:&error];
     } else if (dataModel.requestType == CQNetManRequestTypeUpload) {
 //        request = [self.httpRequestSerializer multipartFormRequestWithMethod:@"POST" URLString:urlString parameters:commonParams constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
 //            /**
@@ -113,11 +113,12 @@ static NSTimeInterval kNetManTimeoutSeconds = 20.0f;
 }
 
 
--(BOOL)isCorrectPreUrl:(NSString *)string{
-    NSString *pattern = @"^([hH][tT]{2}[pP]://|[hH][tT]{2}[pP][sS]://)(([A-Za-z0-9-~]+).)+([A-Za-z0-9-~\\/])+$";
-    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
-    BOOL isMatch = [pred evaluateWithObject:string];
-    return isMatch;
-}
 
+
+-(CQNetManHttpRequestSerializer *)httpRequestSerializer{
+    if(!_httpRequestSerializer){
+        _httpRequestSerializer = [[CQNetManHttpRequestSerializer alloc] init];
+    }
+    return _httpRequestSerializer;
+}
 @end

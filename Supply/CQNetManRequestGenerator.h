@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (instancetype)defaultGenerator;
 
--(NSURLRequest *)generateWithRequestDataModel:(CQNetManBaseRequestModel *)dataModel;
+-(NSMutableURLRequest *)generateWithRequestDataModel:(CQNetManBaseRequestModel *)dataModel;
 
 
 

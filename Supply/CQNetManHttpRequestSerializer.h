@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Request生成器
  */
--(void)requestWithMethod:(NSString *)methodType URLString:(NSString *)urlString parameters:(NSDictionary *)params error:(NSError **)error;
+-(NSMutableURLRequest *)requestWithMethod:(NSString *)methodType URLString:(NSString *)urlString parameters:(NSDictionary *)params error:(NSError **)error;
 
 @end
 
