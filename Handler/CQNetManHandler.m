@@ -15,14 +15,9 @@
         
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:30];
     
-    NSURLSession *sharedSession = [NSURLSession sharedSession];
-        
-    NSURLSessionDataTask *dataTask = [sharedSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-    
+    [self doNetWorkWithRequst:request andSolveBlock:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         handlerBlock(data, response, error);
-    
     }];
-    [dataTask resume];
 }
 
 +(void)doPostWithURL:(NSString *)urlString andParams:(NSDictionary *)params andSloveBlock:(CQNetManResponseSolveBlock)handlerBlock{
@@ -41,6 +36,12 @@
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:paramsData];
     
+    [self doNetWorkWithRequst:request andSolveBlock:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        handlerBlock(data, response, error);
+    }];
+}
+
++(void)doNetWorkWithRequst:(NSURLRequest *)request andSolveBlock:(CQNetManResponseSolveBlock)handlerBlock{
     NSURLSession *sharedSession = [NSURLSession sharedSession];
         
     NSURLSessionDataTask *dataTask = [sharedSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
@@ -50,6 +51,5 @@
     }];
     [dataTask resume];
 }
-
 
 @end

@@ -20,6 +20,7 @@ typedef void(^CQNetManResponseSolveBlock)(NSData * _Nullable data, NSURLResponse
 
 +(void)doPostWithURL:(NSString *)urlString andParamsData:(NSData *)paramsData andSloveBlock:(CQNetManResponseSolveBlock)handlerBlock;
 
++(void)doNetWorkWithRequst:(NSURLRequest *)request andSolveBlock:(CQNetManResponseSolveBlock)handlerBlock;
 
 @end
 
