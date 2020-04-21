@@ -112,7 +112,12 @@ static NSTimeInterval kNetManTimeoutSeconds = 20.0f;
     return [fullURL absoluteString];
 }
 
-
+-(BOOL)isCorrectPreUrl:(NSString *)string{
+    NSString *pattern = @"^([hH][tT]{2}[pP]://|[hH][tT]{2}[pP][sS]://)(([A-Za-z0-9-~]+).)+([A-Za-z0-9-~\\/])+$";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    BOOL isMatch = [pred evaluateWithObject:string];
+    return isMatch;
+}
 
 
 -(CQNetManHttpRequestSerializer *)httpRequestSerializer{
