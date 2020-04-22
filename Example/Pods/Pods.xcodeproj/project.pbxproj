@@ -43,6 +43,8 @@
 		8E2C605524482F530090A282 /* CQNetManManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C605324482F530090A282 /* CQNetManManager.h */; };
 		8E2C60582448303F0090A282 /* CQNetManBaseRequestModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C60562448303F0090A282 /* CQNetManBaseRequestModel.h */; };
 		8E2C60592448303F0090A282 /* CQNetManBaseRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C60572448303F0090A282 /* CQNetManBaseRequestModel.m */; };
+		8EA9A773244FF5200069AB3B /* CQNetManErrorHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA9A771244FF5200069AB3B /* CQNetManErrorHandler.h */; };
+		8EA9A774244FF5200069AB3B /* CQNetManErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9A772244FF5200069AB3B /* CQNetManErrorHandler.m */; };
 		C744A5FC093E6F34960ABD2F7646144B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		F3EE9EBD31C2E39D354F67FA2A229598 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		FFCACD0B365A4AE0380A8CD3CEBDCDCE /* CQNetManKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B2F8170C1A9C878CAF258EB94FEC7FC /* CQNetManKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -112,6 +114,8 @@
 		8E2C605324482F530090A282 /* CQNetManManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManManager.h; sourceTree = "<group>"; };
 		8E2C60562448303F0090A282 /* CQNetManBaseRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManBaseRequestModel.h; sourceTree = "<group>"; };
 		8E2C60572448303F0090A282 /* CQNetManBaseRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQNetManBaseRequestModel.m; sourceTree = "<group>"; };
+		8EA9A771244FF5200069AB3B /* CQNetManErrorHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CQNetManErrorHandler.h; sourceTree = "<group>"; };
+		8EA9A772244FF5200069AB3B /* CQNetManErrorHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CQNetManErrorHandler.m; sourceTree = "<group>"; };
 		9769A7B605AE21A7355D0D78CF380378 /* Pods-CQNetManKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQNetManKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A321656E99741D4008E04C0B2E8A396 /* CQNetManKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CQNetManKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2BC13D70271148795AA8F3A067D13D /* Pods-CQNetManKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQNetManKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -267,6 +271,8 @@
 		8E86A2BA2448A3A200A94626 /* Handler */ = {
 			isa = PBXGroup;
 			children = (
+				8EA9A771244FF5200069AB3B /* CQNetManErrorHandler.h */,
+				8EA9A772244FF5200069AB3B /* CQNetManErrorHandler.m */,
 				8E01B9B0244D4116001F7A66 /* CQNetManWorkHandler.h */,
 				8E01B9B1244D4116001F7A66 /* CQNetManWorkHandler.m */,
 			);
@@ -372,6 +378,7 @@
 				8E2C604D24480BE10090A282 /* CQNetManDefine.h in Headers */,
 				8E2C602D244801870090A282 /* CQNetManGenerator.h in Headers */,
 				8E2C603E24480B0F0090A282 /* NSObject+NMNetWorkingAutoCancel.h in Headers */,
+				8EA9A773244FF5200069AB3B /* CQNetManErrorHandler.h in Headers */,
 				8E2C6037244803410090A282 /* NSString+NetMan.h in Headers */,
 				8E2C60582448303F0090A282 /* CQNetManBaseRequestModel.h in Headers */,
 				8E2C604624480B650090A282 /* CQNetManBaseNetEngine.h in Headers */,
@@ -532,6 +539,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA9A774244FF5200069AB3B /* CQNetManErrorHandler.m in Sources */,
 				8E2C602A2448012A0090A282 /* CQNetManAppContext.m in Sources */,
 				096F8ECBEC6E1FFE2F2B01BA62C1D1B0 /* CQNetManKit-dummy.m in Sources */,
 				8E2C605424482F530090A282 /* CQNetManManager.m in Sources */,

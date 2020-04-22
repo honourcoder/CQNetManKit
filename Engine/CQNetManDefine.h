@@ -27,4 +27,15 @@ typedef NS_ENUM(NSInteger, CQNetManRequestType){
 typedef void(^ProgressBlock)(NSProgress *taskProgress);
 typedef void(^CompletionHandlerBlock)(id data, NSError *error);
 
+typedef NS_ENUM(NSInteger, CQNetManErrorCode){
+    ///未知错误
+    CQNetManErrorCodeUnknown            =           60000,
+    ///URL错误
+    CQNetManErrorCodeURLError           =           60301,
+    ///类型转换错误
+    CQNetManErrorCodeFormatError        =           60302,
+    ///参数错误
+    CQNetManErrorCodeParamError         =           60304,
+};
+
 #endif /* CQNetManDefine_h */
