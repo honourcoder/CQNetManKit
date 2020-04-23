@@ -25,19 +25,19 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 请求服务器数据响应函数，这里可以对每种请求方式分别提取一个方法，方便上层Engine调用
  *
- * @param control         控制器对象
  * @param server          服务器相关信息
  * @param apiUrl          API路径
  * @param parameters      参数字典
  * @param requestType     网络请求类型
+ * @param lifeObject      生命周期关联对象
  * @param progressBlock   网络进度回调
  * @param handlerBlock    请求结果数据处理回调
  **/
-+(CQNetManBaseNetEngine *)control:(NSObject *)control
-              requestWithServer:(CQNetManBaseServer *)server
++(CQNetManBaseNetEngine *)requestWithServer:(CQNetManBaseServer *)server
                      APIUrlPath:(NSString *)apiUrl
                           param:(NSDictionary *)parameters
                     requestType:(CQNetManRequestType)requestType
+                 lifeRelativeTo:(NSObject *)lifeObject
                   progressBlock:(ProgressBlock)progressBlock
                   completeBlock:(CompletionHandlerBlock)handlerBlock;
 

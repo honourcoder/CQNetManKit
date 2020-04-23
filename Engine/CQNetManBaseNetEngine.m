@@ -45,27 +45,27 @@
 
 
 /**
- * 请求服务器数据响应函数，这里可以对每种请求方式分别提取一个方法，方便上层Engine调用
- *
- * @param control         控制器对象
- * @param server          服务器相关信息
- * @param apiUrl          API路径
- * @param parameters      参数字典
- * @param requestType     网络请求类型
- * @param progressBlock   网络进度回调
- * @param handlerBlock    请求结果数据处理回调
- **/
-+(CQNetManBaseNetEngine *)control:(NSObject *)control
-             requestWithServer:(CQNetManBaseServer *)server
-                  APIUrlPath:(NSString *)apiUrl
-                       param:(NSDictionary *)parameters
-                 requestType:(CQNetManRequestType)requestType
-               progressBlock:(ProgressBlock)progressBlock
-                   completeBlock:(CompletionHandlerBlock)handlerBlock
+* 请求服务器数据响应函数，这里可以对每种请求方式分别提取一个方法，方便上层Engine调用
+*
+* @param server          服务器相关信息
+* @param apiUrl          API路径
+* @param parameters      参数字典
+* @param requestType     网络请求类型
+* @param lifeObject      生命周期关联对象
+* @param progressBlock   网络进度回调
+* @param handlerBlock    请求结果数据处理回调
+**/
++(CQNetManBaseNetEngine *)requestWithServer:(CQNetManBaseServer *)server
+                                 APIUrlPath:(NSString *)apiUrl
+                                      param:(NSDictionary *)parameters
+                                requestType:(CQNetManRequestType)requestType
+                             lifeRelativeTo:(NSObject *)lifeObject
+                              progressBlock:(ProgressBlock)progressBlock
+                              completeBlock:(CompletionHandlerBlock)handlerBlock
 {
     
     CQNetManBaseNetEngine *engine = [[CQNetManBaseNetEngine alloc]init];
-    __weak typeof(control) weakControl = control;
+    __weak typeof(lifeObject) weakControl = lifeObject;
     CQNetManBaseRequestModel *dataModel = [CQNetManBaseRequestModel dataModelWithServerType:(CQNetManServerType)server.environmentType APIUrlPath:apiUrl param:parameters dataFilePath:nil dataName:nil fileName:nil mimeType:nil requestType:requestType uploadProgressBlock:progressBlock downloadProgressBlock:nil complete:^(id data, NSError *error) {
         if (handlerBlock) {
             //可以在这里做错误的UI处理，或者是在上层engine做
@@ -74,7 +74,7 @@
         [weakControl.netManAutoCancelRequests removeEngineWithRequestID:engine.requestID];
     }];
     dataModel.netManServerDelegate = server;
-    [engine callRequestWithRequestModel:dataModel control:control];
+    [engine callRequestWithRequestModel:dataModel control:lifeObject];
     return engine;
 }
 
