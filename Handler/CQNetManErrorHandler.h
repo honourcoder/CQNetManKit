@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CQNetManErrorHandler : NSObject
 
-+(NSError *)ErrorWithErrorCode:(CQNetManErrorCode)errorCode;
++(NSError *)ErrorWithErrorCode:(CQNetManErrorCode)errorCode WithDescString:(NSString *)descString;
 
 @end
 

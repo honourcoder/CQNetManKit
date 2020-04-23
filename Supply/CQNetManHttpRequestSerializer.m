@@ -6,6 +6,7 @@
 //
 
 #import "CQNetManHttpRequestSerializer.h"
+#import "CQNetManErrorHandler.h"
 
 @implementation CQNetManHttpRequestSerializer
 
@@ -14,7 +15,7 @@
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     //检查URL是否存在问题
     if(![self isCorrectPreUrl:urlString]){
-        *error = [[NSError alloc] initWithDomain:@"[CQNetManKit]" code:20401 userInfo:@{@"userInfo" : [NSString stringWithFormat:@"URL地址不正确:[%@]存在错误", urlString]}];
+        *error = [CQNetManErrorHandler ErrorWithErrorCode:CQNetManErrorCodeURLError WithDescString:[NSString stringWithFormat:@"URL地址不正确:[%@]存在错误", urlString]];
         return nil;
     }
     //检查MethodType是否能正确转化成对应的方法
@@ -27,7 +28,7 @@
         NSError *er = nil;
         NSData *data = [NSJSONSerialization dataWithJSONObject:params options:NSJSONWritingPrettyPrinted error:&er];
         if(er){
-            *error = [[NSError alloc] initWithDomain:@"[CQNetManKit]" code:20302  userInfo:@{@"userInfo" : [NSString stringWithFormat:@"Json Format Error:[%@]存在错误", [params description] ]}];
+            *error = [CQNetManErrorHandler ErrorWithErrorCode:CQNetManErrorCodeFormatError WithDescString:[NSString stringWithFormat:@"类型转换:[%@]的json格式存在错误", params]];
         }else{
             [request setHTTPBody:data];
         }
@@ -37,11 +38,9 @@
         //这里不需要设置
     }else{
         //没有指定的方法，这里不需要进行设置
-        *error = [[NSError alloc] initWithDomain:@"[CQNetManKit]" code:20301 userInfo:@{@"userInfo" : [NSString stringWithFormat:@"Method Type Error:[%@]存在错误", methodType]}];
+        *error = [CQNetManErrorHandler ErrorWithErrorCode:CQNetManErrorCodeParamError WithDescString:[NSString stringWithFormat:@"请求方法类型:[%@]存在错误", urlString]];
         return nil;
     }
-    
-    //检查生成过程是否存在问题
     return request;
 }
 

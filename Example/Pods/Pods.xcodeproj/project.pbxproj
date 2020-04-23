@@ -32,22 +32,23 @@
 		8E2C603F24480B0F0090A282 /* NSObject+NMNetWorkingAutoCancel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C603D24480B0E0090A282 /* NSObject+NMNetWorkingAutoCancel.m */; };
 		8E2C604224480B390090A282 /* CQNetManAutoCancelHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C604024480B390090A282 /* CQNetManAutoCancelHandler.m */; };
 		8E2C604324480B390090A282 /* CQNetManAutoCancelHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604124480B390090A282 /* CQNetManAutoCancelHandler.h */; };
-		8E2C604624480B650090A282 /* CQNetManBaseNetEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604424480B650090A282 /* CQNetManBaseNetEngine.h */; };
+		8E2C604624480B650090A282 /* CQNetManBaseNetEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604424480B650090A282 /* CQNetManBaseNetEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E2C604724480B650090A282 /* CQNetManBaseNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C604524480B650090A282 /* CQNetManBaseNetEngine.m */; };
-		8E2C604A24480BD70090A282 /* CQNetManBaseServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604824480BD70090A282 /* CQNetManBaseServer.h */; };
+		8E2C604A24480BD70090A282 /* CQNetManBaseServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604824480BD70090A282 /* CQNetManBaseServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E2C604B24480BD70090A282 /* CQNetManBaseServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C604924480BD70090A282 /* CQNetManBaseServer.m */; };
-		8E2C604D24480BE10090A282 /* CQNetManDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604C24480BE10090A282 /* CQNetManDefine.h */; };
+		8E2C604D24480BE10090A282 /* CQNetManDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604C24480BE10090A282 /* CQNetManDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E2C605024480C070090A282 /* CQNetManRequestGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604E24480C070090A282 /* CQNetManRequestGenerator.h */; };
 		8E2C605124480C080090A282 /* CQNetManRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C604F24480C070090A282 /* CQNetManRequestGenerator.m */; };
 		8E2C605424482F530090A282 /* CQNetManManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C605224482F530090A282 /* CQNetManManager.m */; };
 		8E2C605524482F530090A282 /* CQNetManManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C605324482F530090A282 /* CQNetManManager.h */; };
 		8E2C60582448303F0090A282 /* CQNetManBaseRequestModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C60562448303F0090A282 /* CQNetManBaseRequestModel.h */; };
 		8E2C60592448303F0090A282 /* CQNetManBaseRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C60572448303F0090A282 /* CQNetManBaseRequestModel.m */; };
+		8E91A23D24519BE7001F1E48 /* CQNetManKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E91A23C24519BE7001F1E48 /* CQNetManKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EA9A773244FF5200069AB3B /* CQNetManErrorHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA9A771244FF5200069AB3B /* CQNetManErrorHandler.h */; };
 		8EA9A774244FF5200069AB3B /* CQNetManErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9A772244FF5200069AB3B /* CQNetManErrorHandler.m */; };
 		C744A5FC093E6F34960ABD2F7646144B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		F3EE9EBD31C2E39D354F67FA2A229598 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FFCACD0B365A4AE0380A8CD3CEBDCDCE /* CQNetManKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B2F8170C1A9C878CAF258EB94FEC7FC /* CQNetManKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFCACD0B365A4AE0380A8CD3CEBDCDCE /* CQNetManKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B2F8170C1A9C878CAF258EB94FEC7FC /* CQNetManKit-umbrella.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		8E2C605324482F530090A282 /* CQNetManManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManManager.h; sourceTree = "<group>"; };
 		8E2C60562448303F0090A282 /* CQNetManBaseRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManBaseRequestModel.h; sourceTree = "<group>"; };
 		8E2C60572448303F0090A282 /* CQNetManBaseRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQNetManBaseRequestModel.m; sourceTree = "<group>"; };
+		8E91A23C24519BE7001F1E48 /* CQNetManKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CQNetManKit.h; sourceTree = "<group>"; };
 		8EA9A771244FF5200069AB3B /* CQNetManErrorHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CQNetManErrorHandler.h; sourceTree = "<group>"; };
 		8EA9A772244FF5200069AB3B /* CQNetManErrorHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CQNetManErrorHandler.m; sourceTree = "<group>"; };
 		9769A7B605AE21A7355D0D78CF380378 /* Pods-CQNetManKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQNetManKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				8E2C605224482F530090A282 /* CQNetManManager.m */,
 				8E01B9B4244D4F0A001F7A66 /* CQNetManConfig.h */,
 				8E01B9B5244D4F0A001F7A66 /* CQNetManConfig.m */,
+				8E91A23C24519BE7001F1E48 /* CQNetManKit.h */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				8E2C602D244801870090A282 /* CQNetManGenerator.h in Headers */,
 				8E2C603E24480B0F0090A282 /* NSObject+NMNetWorkingAutoCancel.h in Headers */,
 				8EA9A773244FF5200069AB3B /* CQNetManErrorHandler.h in Headers */,
+				8E91A23D24519BE7001F1E48 /* CQNetManKit.h in Headers */,
 				8E2C6037244803410090A282 /* NSString+NetMan.h in Headers */,
 				8E2C60582448303F0090A282 /* CQNetManBaseRequestModel.h in Headers */,
 				8E2C604624480B650090A282 /* CQNetManBaseNetEngine.h in Headers */,
