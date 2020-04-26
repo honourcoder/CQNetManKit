@@ -15,7 +15,7 @@
 		77DDFA05AD62CC62C5A44BFBF283A49A /* Pods-CQNetManKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8237776F32961796F379D44AA58439FE /* Pods-CQNetManKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E01B9B2244D4116001F7A66 /* CQNetManWorkHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E01B9B0244D4116001F7A66 /* CQNetManWorkHandler.h */; };
 		8E01B9B3244D4116001F7A66 /* CQNetManWorkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E01B9B1244D4116001F7A66 /* CQNetManWorkHandler.m */; };
-		8E01B9B6244D4F0A001F7A66 /* CQNetManConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E01B9B4244D4F0A001F7A66 /* CQNetManConfig.h */; };
+		8E01B9B6244D4F0A001F7A66 /* CQNetManConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E01B9B4244D4F0A001F7A66 /* CQNetManConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E01B9B7244D4F0A001F7A66 /* CQNetManConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E01B9B5244D4F0A001F7A66 /* CQNetManConfig.m */; };
 		8E01B9BA244D88E9001F7A66 /* CQNetManHttpRequestSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E01B9B8244D88E9001F7A66 /* CQNetManHttpRequestSerializer.h */; };
 		8E01B9BB244D88E9001F7A66 /* CQNetManHttpRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E01B9B9244D88E9001F7A66 /* CQNetManHttpRequestSerializer.m */; };
@@ -32,8 +32,8 @@
 		8E2C603F24480B0F0090A282 /* NSObject+NMNetWorkingAutoCancel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C603D24480B0E0090A282 /* NSObject+NMNetWorkingAutoCancel.m */; };
 		8E2C604224480B390090A282 /* CQNetManAutoCancelHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C604024480B390090A282 /* CQNetManAutoCancelHandler.m */; };
 		8E2C604324480B390090A282 /* CQNetManAutoCancelHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604124480B390090A282 /* CQNetManAutoCancelHandler.h */; };
-		8E2C604624480B650090A282 /* CQNetManBaseNetEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604424480B650090A282 /* CQNetManBaseNetEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E2C604724480B650090A282 /* CQNetManBaseNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C604524480B650090A282 /* CQNetManBaseNetEngine.m */; };
+		8E2C604624480B650090A282 /* CQNetManEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604424480B650090A282 /* CQNetManEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E2C604724480B650090A282 /* CQNetManEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C604524480B650090A282 /* CQNetManEngine.m */; };
 		8E2C604A24480BD70090A282 /* CQNetManBaseServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604824480BD70090A282 /* CQNetManBaseServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E2C604B24480BD70090A282 /* CQNetManBaseServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C604924480BD70090A282 /* CQNetManBaseServer.m */; };
 		8E2C604D24480BE10090A282 /* CQNetManDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2C604C24480BE10090A282 /* CQNetManDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -104,8 +104,8 @@
 		8E2C603D24480B0E0090A282 /* NSObject+NMNetWorkingAutoCancel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NMNetWorkingAutoCancel.m"; sourceTree = "<group>"; };
 		8E2C604024480B390090A282 /* CQNetManAutoCancelHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQNetManAutoCancelHandler.m; sourceTree = "<group>"; };
 		8E2C604124480B390090A282 /* CQNetManAutoCancelHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManAutoCancelHandler.h; sourceTree = "<group>"; };
-		8E2C604424480B650090A282 /* CQNetManBaseNetEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManBaseNetEngine.h; sourceTree = "<group>"; };
-		8E2C604524480B650090A282 /* CQNetManBaseNetEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQNetManBaseNetEngine.m; sourceTree = "<group>"; };
+		8E2C604424480B650090A282 /* CQNetManEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManEngine.h; sourceTree = "<group>"; };
+		8E2C604524480B650090A282 /* CQNetManEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQNetManEngine.m; sourceTree = "<group>"; };
 		8E2C604824480BD70090A282 /* CQNetManBaseServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManBaseServer.h; sourceTree = "<group>"; };
 		8E2C604924480BD70090A282 /* CQNetManBaseServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQNetManBaseServer.m; sourceTree = "<group>"; };
 		8E2C604C24480BE10090A282 /* CQNetManDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQNetManDefine.h; sourceTree = "<group>"; };
@@ -211,6 +211,8 @@
 		8E2C60222447FCED0090A282 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				8E2C604424480B650090A282 /* CQNetManEngine.h */,
+				8E2C604524480B650090A282 /* CQNetManEngine.m */,
 				8E2C605324482F530090A282 /* CQNetManManager.h */,
 				8E2C605224482F530090A282 /* CQNetManManager.m */,
 				8E01B9B4244D4F0A001F7A66 /* CQNetManConfig.h */,
@@ -235,8 +237,6 @@
 				8E2C604C24480BE10090A282 /* CQNetManDefine.h */,
 				8E2C604824480BD70090A282 /* CQNetManBaseServer.h */,
 				8E2C604924480BD70090A282 /* CQNetManBaseServer.m */,
-				8E2C604424480B650090A282 /* CQNetManBaseNetEngine.h */,
-				8E2C604524480B650090A282 /* CQNetManBaseNetEngine.m */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -385,7 +385,7 @@
 				8E91A23D24519BE7001F1E48 /* CQNetManKit.h in Headers */,
 				8E2C6037244803410090A282 /* NSString+NetMan.h in Headers */,
 				8E2C60582448303F0090A282 /* CQNetManBaseRequestModel.h in Headers */,
-				8E2C604624480B650090A282 /* CQNetManBaseNetEngine.h in Headers */,
+				8E2C604624480B650090A282 /* CQNetManEngine.h in Headers */,
 				8E2C603A2448048E0090A282 /* UIDevice+NetMan.h in Headers */,
 				8E01B9BA244D88E9001F7A66 /* CQNetManHttpRequestSerializer.h in Headers */,
 				FFCACD0B365A4AE0380A8CD3CEBDCDCE /* CQNetManKit-umbrella.h in Headers */,
@@ -550,7 +550,7 @@
 				8E2C604B24480BD70090A282 /* CQNetManBaseServer.m in Sources */,
 				8E2C6036244803410090A282 /* NSString+NetMan.m in Sources */,
 				8E01B9B3244D4116001F7A66 /* CQNetManWorkHandler.m in Sources */,
-				8E2C604724480B650090A282 /* CQNetManBaseNetEngine.m in Sources */,
+				8E2C604724480B650090A282 /* CQNetManEngine.m in Sources */,
 				8E2C603F24480B0F0090A282 /* NSObject+NMNetWorkingAutoCancel.m in Sources */,
 				8E01B9BB244D88E9001F7A66 /* CQNetManHttpRequestSerializer.m in Sources */,
 				8E2C604224480B390090A282 /* CQNetManAutoCancelHandler.m in Sources */,

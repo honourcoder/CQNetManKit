@@ -26,12 +26,20 @@ typedef NS_ENUM(NSUInteger,CQEnvironmentType) {
 //服务器类型
 @property (nonatomic, assign) CQEnvironmentType environmentType;
 
-@property (nonatomic, strong) NSString *developApiBaseUrl;
-@property (nonatomic, strong) NSString *prereleaseApiBaseUrl;
-@property (nonatomic, strong) NSString *releaseApiBaseUrl;
+///测试地址1
+@property (nonatomic, strong) NSString *apiBaseUrlForTest1;
+///测试地址2
+@property (nonatomic, strong) NSString *apiBaseUrlForTest2;
+///测试地址3
+@property (nonatomic, strong) NSString *apiBaseUrlForTest3;
+///开发地址
+@property (nonatomic, strong) NSString *apiBaseUrlForDevelope;
+///预上线地址
+@property (nonatomic, strong) NSString *apiBaseUrlForPrerelease;
+///生产地址
+@property (nonatomic, strong) NSString *apiBaseUrlForRelease;
 
-@property (nonatomic, strong, readonly) NSString *publicKey;
-@property (nonatomic, strong, readonly) NSString *privateKey;
+///不要重写这个的get方法
 @property (nonatomic, strong, readonly) NSString *apiBaseUrl;
 
 @end

@@ -41,13 +41,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**  上传进度回调  **/
-@property (nonatomic, copy) ProgressBlock uploadProgressBlock;
+@property (nonatomic, copy) CQProgressBlock uploadProgressBlock;
 /**  下载进度回调  **/
-@property (nonatomic, copy) ProgressBlock downloadProgressBlock;
+@property (nonatomic, copy) CQProgressBlock downloadProgressBlock;
 
 @property (nonatomic, assign) CQNetManBaseServer *netManServerDelegate;
 /**  请求着陆回调  **/
-@property (nonatomic, copy) CompletionHandlerBlock responseBlock;
+@property (nonatomic, copy) CQCompletionHandlerBlock responseBlock;
 
 /** 自定义便利构造器 */
 +(CQNetManBaseRequestModel *)dataModelWithServerType:(CQNetManServerType)serverType
@@ -58,9 +58,9 @@ NS_ASSUME_NONNULL_BEGIN
                                            fileName:(NSString *)fileName
                                            mimeType:(NSString *)mimeType
                                         requestType:(CQNetManRequestType)requestType
-                                uploadProgressBlock:(ProgressBlock)uploadProgressBlock
-                              downloadProgressBlock:(ProgressBlock)downloadProgressBlock
-                                           complete:(CompletionHandlerBlock)responseBlock;
+                                uploadProgressBlock:(CQProgressBlock)uploadProgressBlock
+                              downloadProgressBlock:(CQProgressBlock)downloadProgressBlock
+                                           complete:(CQCompletionHandlerBlock)responseBlock;
 
 @end
 

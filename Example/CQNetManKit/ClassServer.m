@@ -10,4 +10,16 @@
 
 @implementation ClassServer
 
+-(NSString *)developApiBaseUrl{
+    return @"http://www.baidu.com";
+}
+
+-(NSString *)prereleaseApiBaseUrl{
+    return @"http://www.baidu.com";
+}
+
+-(NSString *)releaseApiBaseUrl{
+    return @"http://www.baidu.com";
+}
+
 @end

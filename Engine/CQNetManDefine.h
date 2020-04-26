@@ -24,8 +24,8 @@ typedef NS_ENUM(NSInteger, CQNetManRequestType){
     CQNetManRequestTypeDownload   //下载文件
 };
 
-typedef void(^ProgressBlock)(NSProgress *taskProgress);
-typedef void(^CompletionHandlerBlock)(id data, NSError *error);
+typedef void(^CQProgressBlock)(NSProgress *taskProgress);
+typedef void(^CQCompletionHandlerBlock)(id data, NSError *error);
 
 typedef NS_ENUM(NSInteger, CQNetManErrorCode){
     ///未知错误

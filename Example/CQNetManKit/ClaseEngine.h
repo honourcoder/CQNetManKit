@@ -1,8 +1,8 @@
 //
-//  ClassServer.h
+//  ClaseEngine.h
 //  CQNetManKit_Example
 //
-//  Created by Arthur on 2020/4/23.
+//  Created by Arthur on 2020/4/26.
 //  Copyright © 2020 honourcoder. All rights reserved.
 //
 
@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ClassServer : CQNetManBaseServer
-
-
+@interface ClaseEngine : NSObject
 
 @end
 

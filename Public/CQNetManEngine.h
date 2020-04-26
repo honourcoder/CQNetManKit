@@ -1,5 +1,5 @@
 //
-//  CQBaseNetEngine.h
+//  CQNetEngine.h
 //  CQNetFrame
 //
 //  Created by Arthur's on 2019/7/11.
@@ -9,12 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "CQNetManDefine.h"
 #import "CQNetManBaseServer.h"
+#import "CQNetManConfig.h"
 
 @class NetManBaseServer;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CQNetManBaseNetEngine : NSObject
+@interface CQNetManEngine : NSObject
+
+@property (nonatomic, strong) CQNetManConfig *netConfig;
+
 
 /**  取消持有的网络请求  **/
 -(void)cancelAllRequest;
@@ -33,13 +37,13 @@ NS_ASSUME_NONNULL_BEGIN
  * @param progressBlock   网络进度回调
  * @param handlerBlock    请求结果数据处理回调
  **/
-+(CQNetManBaseNetEngine *)requestWithServer:(CQNetManBaseServer *)server
+-(CQNetManEngine *)requestWithServer:(CQNetManBaseServer *)server
                      APIUrlPath:(NSString *)apiUrl
                           param:(NSDictionary *)parameters
                     requestType:(CQNetManRequestType)requestType
                  lifeRelativeTo:(NSObject *)lifeObject
-                  progressBlock:(ProgressBlock)progressBlock
-                  completeBlock:(CompletionHandlerBlock)handlerBlock;
+                  progressBlock:(CQProgressBlock)progressBlock
+                  completeBlock:(CQCompletionHandlerBlock)handlerBlock;
 
 
 
@@ -58,7 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
 * @param uploadProgressBlock    上传进度回调
 * @param responseBlock          请求结果数据处理回调
 **/
-+(CQNetManBaseNetEngine *)control:(NSObject *)control
+-(CQNetManEngine *)control:(NSObject *)control
      uploadRequestWithServerType:(CQNetManServerType)serverType
                       serverInfo:(CQNetManBaseServer *)server
                       APIUrlPath:(NSString *)apiUrl
@@ -68,9 +72,9 @@ NS_ASSUME_NONNULL_BEGIN
                         fileName:(NSString *)fileName
                         mimeType:(NSString *)mimeType
                      requestType:(CQNetManRequestType)requestType
-             uploadProgressBlock:(ProgressBlock)uploadProgressBlock
-           downloadProgressBlock:(ProgressBlock)downloadProgressBlock
-                   completeBlock:(CompletionHandlerBlock)responseBlock;
+             uploadProgressBlock:(CQProgressBlock)uploadProgressBlock
+           downloadProgressBlock:(CQProgressBlock)downloadProgressBlock
+                   completeBlock:(CQCompletionHandlerBlock)responseBlock;
 
 
 /**
@@ -85,14 +89,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @param responseBlock          请求结果数据处理回调
  **/
 
-+(CQNetManBaseNetEngine *)control:(NSObject *)control
+-(CQNetManEngine *)control:(NSObject *)control
   downloadRequestWithServerType:(CQNetManServerType)serverType
                      serverInfo:(CQNetManBaseServer *)server
                      APIUrlPath:(NSString *)apiUrl
                           param:(NSDictionary *)parameters
                     requestType:(CQNetManRequestType)requestType
-          downloadProgressBlock:(ProgressBlock)downloadProgressBlock
-                  completeBlock:(CompletionHandlerBlock)responseBlock;
+          downloadProgressBlock:(CQProgressBlock)downloadProgressBlock
+                  completeBlock:(CQCompletionHandlerBlock)responseBlock;
 
 @end
 

@@ -6,13 +6,13 @@
 //  Copyright © 2019 Arthur's. All rights reserved.
 //
 
-#import "CQNetManBaseNetEngine.h"
+#import "CQNetManEngine.h"
 #import "CQNetManManager.h"
 #import "CQNetManBaseRequestModel.h"
 #import "NSObject+NMNetWorkingAutoCancel.h"
 #import "CQNetManBaseServer.h"
 
-@interface CQNetManBaseNetEngine ()
+@interface CQNetManEngine ()
 
 /**  请求的ID编号  **/
 @property (nonatomic, strong) NSNumber *requestID;
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation CQNetManBaseNetEngine
+@implementation CQNetManEngine
 
 -(void)dealloc
 {
@@ -55,16 +55,16 @@
 * @param progressBlock   网络进度回调
 * @param handlerBlock    请求结果数据处理回调
 **/
-+(CQNetManBaseNetEngine *)requestWithServer:(CQNetManBaseServer *)server
+-(CQNetManEngine *)requestWithServer:(CQNetManBaseServer *)server
                                  APIUrlPath:(NSString *)apiUrl
                                       param:(NSDictionary *)parameters
                                 requestType:(CQNetManRequestType)requestType
                              lifeRelativeTo:(NSObject *)lifeObject
-                              progressBlock:(ProgressBlock)progressBlock
-                              completeBlock:(CompletionHandlerBlock)handlerBlock
+                              progressBlock:(CQProgressBlock)progressBlock
+                              completeBlock:(CQCompletionHandlerBlock)handlerBlock
 {
     
-    CQNetManBaseNetEngine *engine = [[CQNetManBaseNetEngine alloc]init];
+    CQNetManEngine *engine = [[CQNetManEngine alloc]init];
     __weak typeof(lifeObject) weakControl = lifeObject;
     CQNetManBaseRequestModel *dataModel = [CQNetManBaseRequestModel dataModelWithServerType:(CQNetManServerType)server.environmentType APIUrlPath:apiUrl param:parameters dataFilePath:nil dataName:nil fileName:nil mimeType:nil requestType:requestType uploadProgressBlock:progressBlock downloadProgressBlock:nil complete:^(id data, NSError *error) {
         if (handlerBlock) {
@@ -93,7 +93,7 @@
  * @param uploadProgressBlock    上传进度回调
  * @param responseBlock          请求结果数据处理回调
  **/
-+ (CQNetManBaseNetEngine *) control:(NSObject *)control
+- (CQNetManEngine *) control:(NSObject *)control
     uploadRequestWithServerType:(CQNetManServerType)serverType
                      serverInfo:(CQNetManBaseServer *)server
                      APIUrlPath:(NSString *)apiUrl
@@ -103,11 +103,11 @@
                        fileName:(NSString *)fileName
                        mimeType:(NSString *)mimeType
                     requestType:(CQNetManRequestType)requestType
-            uploadProgressBlock:(ProgressBlock)uploadProgressBlock
-          downloadProgressBlock:(ProgressBlock)downloadProgressBlock
-                  completeBlock:(CompletionHandlerBlock)responseBlock
+            uploadProgressBlock:(CQProgressBlock)uploadProgressBlock
+          downloadProgressBlock:(CQProgressBlock)downloadProgressBlock
+                  completeBlock:(CQCompletionHandlerBlock)responseBlock
 {
-    CQNetManBaseNetEngine *engine = [[CQNetManBaseNetEngine alloc]init];
+    CQNetManEngine *engine = [[CQNetManEngine alloc]init];
     __weak typeof(control) weakControl = control;
     CQNetManBaseRequestModel *dataModel = [CQNetManBaseRequestModel dataModelWithServerType:serverType APIUrlPath:apiUrl param:parameters dataFilePath:dataFilePath dataName:dataName fileName:fileName mimeType:mimeType requestType:requestType uploadProgressBlock:uploadProgressBlock downloadProgressBlock:downloadProgressBlock complete:^(id data, NSError *error) {
         if (responseBlock) {
@@ -133,16 +133,16 @@
  * @param responseBlock          请求结果数据处理回调
  **/
 
-+ (CQNetManBaseNetEngine *) control:(NSObject *)control
+- (CQNetManEngine *) control:(NSObject *)control
   downloadRequestWithServerType:(CQNetManServerType)serverType
                      serverInfo:(CQNetManBaseServer *)server
                      APIUrlPath:(NSString *)apiUrl
                           param:(NSDictionary *)parameters
                     requestType:(CQNetManRequestType)requestType
-          downloadProgressBlock:(ProgressBlock)downloadProgressBlock
-                  completeBlock:(CompletionHandlerBlock)responseBlock
+          downloadProgressBlock:(CQProgressBlock)downloadProgressBlock
+                  completeBlock:(CQCompletionHandlerBlock)responseBlock
 {
-    CQNetManBaseNetEngine *engine = [[CQNetManBaseNetEngine alloc]init];
+    CQNetManEngine *engine = [[CQNetManEngine alloc]init];
     __weak typeof(control) weakControl = control;
     CQNetManBaseRequestModel *dataModel = [CQNetManBaseRequestModel dataModelWithServerType:serverType APIUrlPath:apiUrl param:parameters dataFilePath:nil dataName:nil fileName:nil mimeType:nil requestType:requestType uploadProgressBlock:nil downloadProgressBlock:downloadProgressBlock complete:^(id data, NSError *error) {
         if (responseBlock) {

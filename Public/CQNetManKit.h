@@ -9,6 +9,7 @@
 #define CQNetManKit_h
 
 #import <CQNetManBaseServer.h>
-#import <CQNetManBaseNetEngine.h>
+#import <CQNetManEngine.h>
+#import <CQNetManConfig.h>
 
 #endif /* CQNetManKit_h */

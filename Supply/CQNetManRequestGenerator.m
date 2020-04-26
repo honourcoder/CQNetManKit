@@ -46,13 +46,22 @@ static NSTimeInterval kNetManTimeoutSeconds = 20.0f;
         server = [[CQNetManBaseServer alloc] init];
     }
     BOOL baseUrlIsError = NO;
-    if(![self isCorrectPreUrl:dataModel.netManServerDelegate.developApiBaseUrl]){
+    if(![self isCorrectPreUrl:dataModel.netManServerDelegate.apiBaseUrlForDevelope]){
         baseUrlIsError = YES;
     }
-    if(![self isCorrectPreUrl:dataModel.netManServerDelegate.prereleaseApiBaseUrl]){
+    if(![self isCorrectPreUrl:dataModel.netManServerDelegate.apiBaseUrlForPrerelease]){
         baseUrlIsError = YES;
     }
-    if(![self isCorrectPreUrl:dataModel.netManServerDelegate.releaseApiBaseUrl]){
+    if(![self isCorrectPreUrl:dataModel.netManServerDelegate.apiBaseUrlForRelease]){
+        baseUrlIsError = YES;
+    }
+    if(![self isCorrectPreUrl:dataModel.netManServerDelegate.apiBaseUrlForTest1]){
+        baseUrlIsError = YES;
+    }
+    if(![self isCorrectPreUrl:dataModel.netManServerDelegate.apiBaseUrlForTest2]){
+        baseUrlIsError = YES;
+    }
+    if(![self isCorrectPreUrl:dataModel.netManServerDelegate.apiBaseUrlForTest3]){
         baseUrlIsError = YES;
     }
     if(baseUrlIsError){

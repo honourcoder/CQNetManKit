@@ -7,12 +7,12 @@
 //
 
 #import "CQNetManAutoCancelHandler.h"
-#import "CQNetManBaseNetEngine.h"
+#import "CQNetManEngine.h"
 
 @interface CQNetManAutoCancelHandler()
 
 /** requestEngines 将网络请求和编号绑定在一起存放，并且一起绑定到NSObject上，在requestEngines释放的时候，根据request取消没有返回的网络请求*/
-@property (nonatomic, strong) NSMutableDictionary<NSNumber *,CQNetManBaseNetEngine *> *requestEngines;
+@property (nonatomic, strong) NSMutableDictionary<NSNumber *,CQNetManEngine *> *requestEngines;
 
 @end
 
@@ -21,7 +21,7 @@
 
 -(void)dealloc{
     //在释放的时候，根据request取消没有返回的网络请求
-    [self.requestEngines enumerateKeysAndObjectsUsingBlock:^(NSNumber * _Nonnull key, CQNetManBaseNetEngine * _Nonnull obj, BOOL * _Nonnull stop) {
+    [self.requestEngines enumerateKeysAndObjectsUsingBlock:^(NSNumber * _Nonnull key, CQNetManEngine * _Nonnull obj, BOOL * _Nonnull stop) {
         [obj cancelRequest];
     }];
     [self.requestEngines removeAllObjects];

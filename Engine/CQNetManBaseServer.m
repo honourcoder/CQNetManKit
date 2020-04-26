@@ -17,7 +17,6 @@
 
 @implementation CQNetManBaseServer
 
-@synthesize privateKey = _privateKey;
 @synthesize apiBaseUrl = _apiBaseUrl;
 
 - (instancetype)init
@@ -29,26 +28,20 @@
     return self;
 }
 
-- (NSString *)privateKey
-{
-    if (!_privateKey) {
-        _privateKey = @"Hey NetMan";
-    }
-    return _privateKey;
-}
+
 
 - (NSString *)apiBaseUrl
 {
     if (_apiBaseUrl == nil) {
         switch (self.environmentType) {
             case CQEnvironmentTypeDevelop:
-                _apiBaseUrl = self.developApiBaseUrl;
+                _apiBaseUrl = self.apiBaseUrlForDevelope;
                 break;
             case CQEnvironmentTypePreRelease:
-                _apiBaseUrl = self.prereleaseApiBaseUrl;
+                _apiBaseUrl = self.apiBaseUrlForPrerelease;
                 break;
             case CQEnvironmentTypeRelease:
-                _apiBaseUrl = self.releaseApiBaseUrl;
+                _apiBaseUrl = self.apiBaseUrlForRelease;
                 break;
             default:
                 break;
@@ -57,10 +50,10 @@
     return _apiBaseUrl;
 }
 
-@synthesize developApiBaseUrl = _developApiBaseUrl;
+@synthesize apiBaseUrlForDevelope = _apiBaseUrlForDevelope;
 
-@synthesize prereleaseApiBaseUrl = _prereleaseApiBaseUrl;
+@synthesize apiBaseUrlForPrerelease = _apiBaseUrlForPrerelease;
 
-@synthesize releaseApiBaseUrl = _releaseApiBaseUrl;
+@synthesize apiBaseUrlForRelease = _apiBaseUrlForRelease;
 
 @end
